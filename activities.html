@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Nürburgring Nordschleife</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/c39b2ca8b5.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+<section class="header">
+    <nav>
+        <a href="index.html"><img src="assets/Custom Logo.jpg"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="track.html">THE TRACK</a></li>
+                <li><a href="fastestlaps.html">FASTEST LAPS</a></li>
+                <li><a href="activities.html">ACTIVITIES</a></li>
+                <li><a href="contact.html">CONTACT US</a></li>
+            </ul> 
+        </div>
+        <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+    </nav>
+
+    <script>
+
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+
+<div class="activities">
+    <h1>ACTIVITIES</h1>
+    <p>As well as a full racing calendar, featuring the Porsche Sports Cup, DTM series, ADAC Truck Racing, and the Nürburgring Drift Cup, the Nürburgring has a plathora of other activities for fans to enjoy. Please click the activity images below for more information on each.</p>
+    
+    <div class="activity">
+        <a href="https://www.nuerburgring.de/driving/touristdrives"><img src="assets/Tourist_drives_300x200.jpg" alt="Tourist Drives"></a>
+        <div class="description">
+            <h2>Tourist Drives</h2>
+            <p>The Nürburgring. The Green Hell. Rapid pulse, racing heart, adrenaline rush. Experience the legendary track first hand through your own visor. In a car or with your motorbike. Enjoy the tourist drives on the Nordschleife or the Grand Prix Track and put your tyres on the legendary asphalt. Become one with each corner and straight – and with the myth of the Nürburgring.</p>
+        </div>
+    </div>
+    <div class="activity">
+        <a href="https://www.nuerburgring.de/driving/driving-academy/co-pilot"><img src="assets/copilot_1_300x200.jpg" alt="Copilot"></a>
+        <div class="description">
+            <h2>Copilot Experience</h2>
+            <p>Experience the thrill of the Nürburgring like never before. Strap in and hold on tight as you are driven around the Nordschleife at speeds you wouldn't believe. Our experienced racing drivers show you how the Pros do it in one of our Mercedes AMG GT R Pro cars.</p>
+        </div>
+    </div>
+    <div class="activity">
+        <a href="https://www.nuerburgring.de/driving/driving-academy/about-us"><img src="assets/Driving_academy_300x200.jpg" alt="Driving Academy"></a>
+        <div class="description">
+            <h2>Nürburgring Driving Academy</h2>
+            <p>Want to master the Nürburgring? We can teach you how. Learn under the  tutelage of professional instructors to learn everything there is to know about driving the Nordschleife. If that's not enough for you, we also have training to achieve a national A license to take part in professional race on the Grand Prix circuit!</p>
+        </div>
+    </div>
+    <div class="activity">
+        <a href="https://nuerburgring.de/events/categories/entertainment"><img src="assets/Entertainment_300x200.jpg" alt="Entertainment"></a>
+        <div class="description">
+            <h2>Entertainment</h2>
+            <p>The Nürburgring hosts live events all year round. Choose from live football on our 45x8m LED ring wall, BigFM party nights with live DJs and bands, German league championship darts, Loco Beach party festival, exhibitions, family days and special events like the RAD AM RING cycling event and our most famous event, The ROCK AM RING, our rock music festival now into it's 40th year. There really is something for everyone.</p>
+        </div>
+    </div>
+    <!-- Add more activities as needed -->
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-links">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="track.html">THE TRACK</a></li>
+                    <li><a href="fastestlaps.html">FASTEST LAPS</a></li>
+                    <li><a href="activities.html">ACTIVITIES</a></li>
+                    <li><a href="contact.html">CONTACT US</a></li>
+                </ul>
+            </div>
+            <div class="social-media">
+                <ul>
+                    <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                </ul>
+            </div>
+            <div class="copyright">
+                &copy; 2024 DD Group All rights reserved.
+            </div>
+        </div>
+    </footer>
+</div>
+</section>
+</body>
+</html>
+
+

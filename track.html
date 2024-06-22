@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Nürburgring Nordschleife</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/c39b2ca8b5.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+<section class="header">
+    <nav>
+        <a href="index.html"><img src="assets/Custom Logo.jpg"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="track.html">THE TRACK</a></li>
+                <li><a href="fastestlaps.html">FASTEST LAPS</a></li>
+                <li><a href="activities.html">ACTIVITIES</a></li>
+                <li><a href="contact.html">CONTACT US</a></li>
+            </ul> 
+        </div>
+        <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+    </nav>
+
+    <script>
+
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>    
+
+    <div class="track">
+        <h1>The Nordschleife</h1>
+        <div class="row">
+            <div class="track-col">
+                <img src="assets/nurburgring PUBLIC.jpg" alt="Nurburgring Public Use">
+                <div class="layer">
+                    <h3>PUBLIC USE</h3>
+                    <p>Due to it's length and complexity, the Nordschleife is a very demanding and difficult track to master. We have provided a fully labelled map below to help drivers plan and navigate the track, please be mindful of the track rules to ensure everyone has a safe and enjoyable time at The Nürburgring.</p>
+                </div>
+            </div>
+            <div class="track-col">
+                <img src="assets/nurburgring rules.jpg" alt="Nurburgring Rules">
+                <div class="layer">
+                    <h3>TRACK RULES</h3>
+                    <p>The Nürburgring (Nordschleife and/ or Grand Prix Track) is made available for touristic rides (tourist rides) on days when it is not being used for events or testing. The German Road Traffic Regulations (StVO) apply to such rides. For the full regulations of using the Nürburgring please visit the link below.</p>
+                    <a href="https://nuerburgring.de/info/company/gtc/driving-regulations">Nürburgring Regulations</a>
+                </div>
+            </div>   
+        </div>  
+          
+        <img src="assets/Cornering Guide.jpg">
+
+    </div>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-links">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="track.html">THE TRACK</a></li>
+                    <li><a href="fastestlaps.html">FASTEST LAPS</a></li>
+                    <li><a href="activities.html">ACTIVITIES</a></li>
+                    <li><a href="contact.html">CONTACT US</a></li>
+                </ul>
+            </div>
+            <div class="social-media">
+                <ul>
+                    <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                </ul>
+            </div>
+            <div class="copyright">
+                &copy; 2024 DD Group All rights reserved.
+            </div>
+        </div>
+    </footer>
+</section>
+
+

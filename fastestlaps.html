@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Nürburgring Nordschleife</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/c39b2ca8b5.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+<section class="header">
+    <nav>
+        <a href="index.html"><img src="assets/Custom Logo.jpg"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="track.html">THE TRACK</a></li>
+                <li><a href="fastestlaps.html">FASTEST LAPS</a></li>
+                <li><a href="activities.html">ACTIVITIES</a></li>
+                <li><a href="contact.html">CONTACT US</a></li>
+            </ul> 
+        </div>
+        <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+    </nav>
+
+    <script>
+
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+
+    <div class="fastestlaps">
+    
+        <h1>Fastest Laps</h1>
+        <br>
+        <p>Below are videos of the fastest laps ever recorded at the Nürburgring Nordschleife. (All lap times are in minutes:seconds.milliseconds format).</p>
+
+        <div class="row">
+            <div class="fastestlap-col">
+                <h3>#1</h3>
+                <p>In first place with the fastest lap ever recorded around the Nordschleife is Timo Bernhard. Timo achieved a time of 5:19.546 on 29/06/2018 behind the wheel of a Porsche 919 Hybrid Evo.</p>
+                <br>
+                <iframe width="350" height="300" src="https://www.youtube.com/embed/KsLi7HgSuhI?si=-yCNIHJhW_326FiP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div class="fastestlap-col">
+                <h3>#2</h3>
+                <p>The second fastest lap ever recorded around the Nordschleife  was achieved by Romain Dumans on 03/06/2019. Romain achieved a time of 6:05.336 behind the wheel of a Volkswagen ID.R. This is also the fastest lap by an electric vehicle.</p>
+                <br>
+                <iframe width="350" height="300" src="https://www.youtube.com/embed/lRHIiJjWhWo?si=jrKN_vH6H7sbtKLb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div class="fastestlap-col">
+                <h3>#3</h3>
+                <p>The third fastest lap recorded around the Nordschleife belongs to Dirk Müller. Müller achieved this feat on 13/10/2023 while driving a Lotus Evija X.</p>
+                <br>
+                <iframe width="350" height="300" src="https://www.youtube.com/embed/kcM_ZxZ1SSs?si=h7z33cTMONj65dcX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>    
+    <footer>
+        <div class="footer-container">
+            <div class="footer-links">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="track.html">THE TRACK</a></li>
+                    <li><a href="fastestlaps.html">FASTEST LAPS</a></li>
+                    <li><a href="activities.html">ACTIVITIES</a></li>
+                    <li><a href="contact.html">CONTACT US</a></li>
+                </ul>
+            </div>
+            <div class="social-media">
+                <ul>
+                    <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                </ul>
+            </div>
+            <div class="copyright">
+                &copy; 2024 DD Group All rights reserved.
+            </div>
+        </div>
+    </footer>    
+</section>
